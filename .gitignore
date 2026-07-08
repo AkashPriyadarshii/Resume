@@ -1,0 +1,7 @@
+# Session handoff — local only, not for GitHub
+HANDOFF.md
+
+# Misc generated markdown (not resume.md or README.md)
+*.md
+!resume.md
+!README.md
