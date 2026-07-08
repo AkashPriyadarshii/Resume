@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akash Priyadarshi — Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <style>
+    /* ── Reset ── */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { font-size: 15.5px; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: #1a1a2e;
+      background: #f5f5f0;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Page ── */
+    .resume {
+      max-width: 1000px;
+      margin: 2.5rem auto;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.07);
+      overflow: hidden;
+    }
+
+    /* ── Header ── */
+    .header {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      color: #fff;
+      padding: 2.5rem 3rem 2rem;
+    }
+    .header h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 0.35rem;
+    }
+    .header .subtitle {
+      font-size: 1rem;
+      font-weight: 400;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 1rem;
+    }
+    .header .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 1.8rem;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.85);
+    }
+    .header .contact-row a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      transition: border-color 0.15s;
+    }
+    .header .contact-row a:hover { border-color: rgba(255,255,255,0.7); }
+    .contact-row .sep { opacity: 0.3; }
+
+    /* ── Body ── */
+    .body { padding: 1.8rem 3rem 2.5rem; }
+
+    /* ── Sections ── */
+    .section { margin-bottom: 1.6rem; }
+    .section:last-child { margin-bottom: 0; }
+    .section-title {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #0f3460;
+      border-bottom: 2px solid #e8e8e8;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    /* ── Summary ── */
+    .summary-text {
+      font-size: 0.92rem;
+      line-height: 1.65;
+      color: #2d2d3a;
+    }
+
+    /* ── Skills Table ── */
+    .skills-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+    }
+    .skills-table td {
+      padding: 0.35rem 0.75rem 0.35rem 0;
+      vertical-align: top;
+    }
+    .skills-table .skill-cat {
+      font-weight: 600;
+      color: #0f3460;
+      white-space: nowrap;
+      width: 1%;
+      padding-right: 1.2rem;
+    }
+    .skills-table .skill-items { color: #2d2d3a; }
+
+    /* ── Projects ── */
+    .project {
+      margin-bottom: 1.2rem;
+      page-break-inside: avoid;
+    }
+    .project:last-child { margin-bottom: 0; }
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+    }
+    .project-name {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #1a1a2e;
+    }
+    .project-stack {
+      font-size: 0.78rem;
+      color: #0f3460;
+      font-weight: 500;
+      background: #eef2f7;
+      padding: 0.15rem 0.6rem;
+      border-radius: 20px;
+    }
+    .project-url {
+      font-size: 0.78rem;
+      color: #0f3460;
+      text-decoration: none;
+      border-bottom: 1px dotted rgba(15,52,96,0.3);
+      margin-top: 0.1rem;
+      display: inline-block;
+    }
+    .project-url:hover { border-bottom-color: #0f3460; }
+    .project-desc {
+      font-size: 0.88rem;
+      color: #2d2d3a;
+      line-height: 1.55;
+      margin-top: 0.25rem;
+    }
+
+    /* ── Education ── */
+    .edu-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      padding: 0.4rem 0;
+    }
+    .edu-row + .edu-row {
+      border-top: 1px solid #f0f0f0;
+    }
+    .edu-qual { font-weight: 600; color: #1a1a2e; font-size: 0.95rem; }
+    .edu-school { color: #2d2d3a; font-size: 0.9rem; }
+    .edu-year { color: #777; font-size: 0.85rem; }
+
+    /* ── Languages ── */
+    .lang-list {
+      display: flex;
+      gap: 1.8rem;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+    }
+    .lang-list span { color: #2d2d3a; }
+    .lang-list .lang-name { font-weight: 600; color: #1a1a2e; }
+
+    /* ── Print ── */
+    @media print {
+      body { background: #fff; padding: 0; }
+      .resume {
+        max-width: 100%;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+      .header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .project-stack { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .section-title { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+
+    @media (max-width: 700px) {
+      .header { padding: 1.8rem 1.5rem 1.5rem; }
+      .body { padding: 1.5rem; }
+      .header h1 { font-size: 1.8rem; }
+      .header .contact-row { gap: 0.3rem 1rem; }
+      .project-header { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume">
+
+    <!-- ════ HEADER ════ -->
+    <div class="header">
+      <h1>Akash Priyadarshi</h1>
+      <div class="subtitle">Self-Taught Developer &bull; Open-Source Builder</div>
+      <div class="contact-row">
+        <span>Patna, Bihar, India</span>
+        <span class="sep">&bull;</span>
+        <span>+91 9199950013</span>
+        <span class="sep">&bull;</span>
+        <span>ydv.akash2006@gmail.com</span>
+        <span class="sep">&bull;</span>
+        <a href="https://github.com/AkashPriyadarshii">github.com/AkashPriyadarshii</a>
+        <span class="sep">&bull;</span>
+        <a href="https://akashpriyadarshi.vercel.app">akashpriyadarshi.vercel.app</a>
+        <span class="sep">&bull;</span>
+        <a href="https://linkedin.com/in/akash-priyadarshi-1aa51b37a">LinkedIn</a>
+      </div>
+    </div>
+
+    <!-- ════ BODY ════ -->
+    <div class="body">
+
+      <!-- ─── SUMMARY ─── -->
+      <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <div class="summary-text">
+          Self-taught developer and open-source contributor with experience across multiple programming languages. Created and maintained <strong>tdlib-android</strong>, an automated precompiled TDLib distribution for Android supporting all 4 CPU architectures with Gradle integration. Built a tourism portal for <strong>Sitamarhi, Bihar</strong> and a starred-repo productivity tool. Experienced in full-stack development with Next.js and Supabase, CI/CD pipeline automation on GitHub Actions, and cross-platform tooling from Kotlin/Android to Go CLI applications.
+        </div>
+      </div>
+
+      <!-- ─── SKILLS ─── -->
+      <div class="section">
+        <div class="section-title">Technical Skills</div>
+        <table class="skills-table">
+          <tr>
+            <td class="skill-cat">Languages</td>
+            <td class="skill-items">TypeScript, JavaScript, Python, Kotlin, Go, Java, Rust, Swift, Dart/Flutter, Shell, PowerShell, PL/pgSQL, HTML, CSS, Dockerfile</td>
+          </tr>
+          <tr>
+            <td class="skill-cat">Android</td>
+            <td class="skill-items">Kotlin, Jetpack Compose, Coroutines, Flow, Room, Android SDK, Gradle, TDLib</td>
+          </tr>
+          <tr>
+            <td class="skill-cat">Frontend</td>
+            <td class="skill-items">Next.js, React, TypeScript, JavaScript, HTML, CSS, PWA</td>
+          </tr>
+          <tr>
+            <td class="skill-cat">Backend &amp; DB</td>
+            <td class="skill-items">Supabase, PostgreSQL, PL/pgSQL, REST APIs</td>
+          </tr>
+          <tr>
+            <td class="skill-cat">DevOps &amp; Cloud</td>
+            <td class="skill-items">GitHub Actions, CI/CD, Docker, Vercel, Cloudflare Pages</td>
+          </tr>
+          <tr>
+            <td class="skill-cat">Tools</td>
+            <td class="skill-items">Claude Code, Git, AI-Assisted Development, Prompt Engineering</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- ─── PROJECTS ─── -->
+      <div class="section">
+        <div class="section-title">Projects</div>
+
+        <!-- 1 -->
+        <div class="project">
+          <div class="project-header">
+            <span class="project-name">tdlib-android</span>
+            <span class="project-stack">Kotlin &bull; Shell &bull; Dockerfile &bull; GitHub Actions</span>
+          </div>
+          <a href="https://github.com/AkashPriyadarshii/tdlib-android" class="project-url">github.com/AkashPriyadarshii/tdlib-android</a>
+          <div class="project-desc">
+            Automated precompiled TDLib distribution for Android. CI/CD pipeline builds and publishes binaries for all 4 Android ABIs — arm64-v8a, armeabi-v7a, x86, x86_64 — with automatic versioned releases. Includes Kotlin Coroutines/Flow wrappers for drop-in Gradle integration. Sustained maintenance since 2021.
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="project">
+          <div class="project-header">
+            <span class="project-name">Sitamarhi Tourism Portal</span>
+            <span class="project-stack">HTML &bull; CSS &bull; JavaScript &bull; Python</span>
+          </div>
+          <a href="https://sitamarhi.pages.dev" class="project-url">sitamarhi.pages.dev</a>
+          <div class="project-desc">
+            Tourism and information portal for Sitamarhi, Bihar — district with significant cultural and religious heritage. Built and deployed on Cloudflare Pages. Showcases local attractions, temples, and travel information for visitors.
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="project">
+          <div class="project-header">
+            <span class="project-name">Personal Portfolio</span>
+            <span class="project-stack">TypeScript &bull; Next.js &bull; Supabase &bull; PL/pgSQL</span>
+          </div>
+          <a href="https://akashpriyadarshi.vercel.app" class="project-url">akashpriyadarshi.vercel.app</a>
+          <div class="project-desc">
+            Production portfolio and operations hub. Built with Next.js 16 and Supabase (PostgreSQL with Row-Level Security). Features HMAC SHA-256 magic-link authentication. Demonstrates continuous iteration and CI/CD discipline.
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="project">
+          <div class="project-header">
+            <span class="project-name">My-Starred-Repos</span>
+            <span class="project-stack">JavaScript &bull; Python &bull; PWA &bull; GitHub Actions</span>
+          </div>
+          <a href="https://github.com/AkashPriyadarshii/My-Starred-Repos" class="project-url">github.com/AkashPriyadarshii/My-Starred-Repos</a>
+          <div class="project-desc">
+            Auto-updating GitHub starred-repository tracker. Progressive Web App with glassmorphism dashboard and daily GitHub Actions sync pipeline. Features 6 theme variants.
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="project">
+          <div class="project-header">
+            <span class="project-name">awesome-agentic-stack</span>
+            <span class="project-stack">Shell &bull; PowerShell</span>
+          </div>
+          <a href="https://github.com/AkashPriyadarshii/awesome-agentic-stack" class="project-url">github.com/AkashPriyadarshii/awesome-agentic-stack</a>
+          <div class="project-desc">
+            Curated directory of AI/agent tools. MIT-licensed community resource for the AI engineering ecosystem with an emphasis on quality filtering.
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="project">
+          <div class="project-header">
+            <span class="project-name">sbi-kiosk-id-generator</span>
+            <span class="project-stack">TypeScript</span>
+          </div>
+          <a href="https://github.com/AkashPriyadarshii/sbi-kiosk-id-generator" class="project-url">github.com/AkashPriyadarshii/sbi-kiosk-id-generator</a>
+          <div class="project-desc">
+            TypeScript utility for generating structured kiosk identifiers. Demonstrates proficiency in typed functional programming and utility library design.
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="project">
+          <div class="project-header">
+            <span class="project-name">claude-sync</span>
+            <span class="project-stack">Go</span>
+          </div>
+          <a href="https://github.com/AkashPriyadarshii/claude-sync" class="project-url">github.com/AkashPriyadarshii/claude-sync</a>
+          <div class="project-desc">
+            CLI tool written in Go for synchronizing content with Claude. Cross-platform command-line interface showcasing systems-level Go programming.
+          </div>
+        </div>
+      </div>
+
+      <!-- ─── EDUCATION ─── -->
+      <div class="section">
+        <div class="section-title">Education</div>
+        <div class="edu-row">
+          <div>
+            <span class="edu-qual">Class 12 (CBSE)</span>
+            <span class="edu-school"> &mdash; Hellens School</span>
+          </div>
+          <span class="edu-year">2026</span>
+        </div>
+        <div class="edu-row">
+          <div>
+            <span class="edu-qual">Class 10 (CBSE)</span>
+            <span class="edu-school"> &mdash; KV Jawaharnagar</span>
+          </div>
+          <span class="edu-year">2024</span>
+        </div>
+      </div>
+
+      <!-- ─── LANGUAGES ─── -->
+      <div class="section">
+        <div class="section-title">Languages</div>
+        <div class="lang-list">
+          <span><span class="lang-name">English</span> — Professional Working Proficiency</span>
+          <span><span class="lang-name">Hindi</span> — Native Proficiency</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
