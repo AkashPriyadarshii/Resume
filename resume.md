@@ -27,43 +27,36 @@ Self-taught developer and open-source contributor with experience across multipl
 *Kotlin, Shell, Dockerfile, GitHub Actions*
 github.com/AkashPriyadarshii/tdlib-android
 
-Automated precompiled TDLib distribution for Android. CI/CD pipeline builds and publishes binaries for all 4 Android ABIs — arm64-v8a, armeabi-v7a, x86, x86_64 — with automatic versioned releases. Includes Kotlin Coroutines/Flow wrappers for drop-in Gradle integration. Sustained maintenance since 2021.
+Precompiled TDLib for all 4 Android ABIs via automated CI/CD pipeline with Kotlin Coroutines/Flow wrappers. Sustained maintenance since 2021.
 
 ### Sitamarhi Tourism Portal
 *HTML, CSS, JavaScript, Python*
 sitamarhi.pages.dev
 
-Tourism and information portal for Sitamarhi, Bihar — district with significant cultural and religious heritage. Built and deployed on Cloudflare Pages. Showcases local attractions, temples, and travel information for visitors.
+Tourism and information portal for Sitamarhi, Bihar. Built and deployed on Cloudflare Pages showcasing local attractions and travel information.
 
 ### Personal Portfolio
 *TypeScript, Next.js, Supabase, PL/pgSQL*
 akashpriyadarshi.vercel.app
 
-Production portfolio and operations hub. Built with Next.js 16 and Supabase (PostgreSQL with Row-Level Security). Features HMAC SHA-256 magic-link authentication. Demonstrates continuous iteration and CI/CD discipline.
+Production portfolio and operations hub built with Next.js 16 and Supabase (PostgreSQL with Row-Level Security). Features HMAC SHA-256 magic-link authentication.
 
 ### My-Starred-Repos
 *JavaScript, Python, PWA, GitHub Actions*
 github.com/AkashPriyadarshii/My-Starred-Repos
 
-Auto-updating GitHub starred-repository tracker. Progressive Web App with glassmorphism dashboard and daily GitHub Actions sync pipeline. Features 6 theme variants.
+Auto-updating GitHub starred-repository tracker as a PWA with glassmorphism dashboard and daily GitHub Actions sync pipeline.
 
 ### awesome-agentic-stack
 *Shell, PowerShell*
 github.com/AkashPriyadarshii/awesome-agentic-stack
 
-Curated directory of AI/agent tools. MIT-licensed community resource for the AI engineering ecosystem with an emphasis on quality filtering.
+Curated directory of AI/agent tools. MIT-licensed community resource for the AI engineering ecosystem.
 
-### sbi-kiosk-id-generator
-*TypeScript*
-github.com/AkashPriyadarshii/sbi-kiosk-id-generator
+### sbi-kiosk-id-generator / claude-sync
+*TypeScript / Go*
 
-TypeScript utility for generating structured kiosk identifiers. Demonstrates proficiency in typed functional programming and utility library design.
-
-### claude-sync
-*Go*
-github.com/AkashPriyadarshii/claude-sync
-
-CLI tool written in Go for synchronizing content with Claude. Cross-platform command-line interface showcasing systems-level Go programming.
+TypeScript utility for kiosk identifiers. Go CLI tool for syncing content with Claude.
 
 ## Education
 

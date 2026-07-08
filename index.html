@@ -10,12 +10,12 @@
   <style>
     /* ── Reset ── */
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-    html { font-size: 15.5px; }
+    html { font-size: 12px; }
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       color: #1a1a2e;
       background: #f5f5f0;
-      line-height: 1.5;
+      line-height: 1.35;
       -webkit-font-smoothing: antialiased;
     }
 
@@ -33,20 +33,20 @@
     .header {
       background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
       color: #fff;
-      padding: 2.5rem 3rem 2rem;
+      padding: 1.5rem 2.5rem 1rem;
     }
     .header h1 {
-      font-size: 2.4rem;
+      font-size: 2rem;
       font-weight: 700;
       letter-spacing: -0.03em;
       line-height: 1.15;
-      margin-bottom: 0.35rem;
+      margin-bottom: 0.2rem;
     }
     .header .subtitle {
-      font-size: 1rem;
+      font-size: 0.9rem;
       font-weight: 400;
       color: rgba(255,255,255,0.7);
-      margin-bottom: 1rem;
+      margin-bottom: 0.7rem;
     }
     .header .contact-row {
       display: flex;
@@ -65,10 +65,10 @@
     .contact-row .sep { opacity: 0.3; }
 
     /* ── Body ── */
-    .body { padding: 1.8rem 3rem 2.5rem; }
+    .body { padding: 1.2rem 2.5rem 1.8rem; }
 
     /* ── Sections ── */
-    .section { margin-bottom: 1.6rem; }
+    .section { margin-bottom: 1.2rem; }
     .section:last-child { margin-bottom: 0; }
     .section-title {
       font-size: 0.75rem;
@@ -83,8 +83,8 @@
 
     /* ── Summary ── */
     .summary-text {
-      font-size: 0.92rem;
-      line-height: 1.65;
+      font-size: 0.85rem;
+      line-height: 1.45;
       color: #2d2d3a;
     }
 
@@ -95,7 +95,7 @@
       font-size: 0.88rem;
     }
     .skills-table td {
-      padding: 0.35rem 0.75rem 0.35rem 0;
+      padding: 0.25rem 0.75rem 0.25rem 0;
       vertical-align: top;
     }
     .skills-table .skill-cat {
@@ -109,7 +109,7 @@
 
     /* ── Projects ── */
     .project {
-      margin-bottom: 1.2rem;
+      margin-bottom: 0.8rem;
       page-break-inside: avoid;
     }
     .project:last-child { margin-bottom: 0; }
@@ -121,32 +121,29 @@
       gap: 0.3rem;
     }
     .project-name {
-      font-size: 1rem;
+      font-size: 0.92rem;
       font-weight: 600;
       color: #1a1a2e;
     }
     .project-stack {
-      font-size: 0.78rem;
+      font-size: 0.7rem;
       color: #0f3460;
       font-weight: 500;
       background: #eef2f7;
       padding: 0.15rem 0.6rem;
       border-radius: 20px;
     }
-    .project-url {
-      font-size: 0.78rem;
+    .project-url-inline {
+      font-weight: 400;
+      font-size: 0.75rem;
       color: #0f3460;
-      text-decoration: none;
-      border-bottom: 1px dotted rgba(15,52,96,0.3);
-      margin-top: 0.1rem;
-      display: inline-block;
+      opacity: 0.7;
     }
-    .project-url:hover { border-bottom-color: #0f3460; }
     .project-desc {
-      font-size: 0.88rem;
+      font-size: 0.8rem;
       color: #2d2d3a;
-      line-height: 1.55;
-      margin-top: 0.25rem;
+      line-height: 1.4;
+      margin-top: 0.15rem;
     }
 
     /* ── Education ── */
@@ -266,87 +263,63 @@
       <div class="section">
         <div class="section-title">Projects</div>
 
-        <!-- 1 -->
         <div class="project">
           <div class="project-header">
-            <span class="project-name">tdlib-android</span>
+            <span class="project-name">tdlib-android<span class="project-url-inline"> — github.com/AkashPriyadarshii/tdlib-android</span></span>
             <span class="project-stack">Kotlin &bull; Shell &bull; Dockerfile &bull; GitHub Actions</span>
           </div>
-          <a href="https://github.com/AkashPriyadarshii/tdlib-android" class="project-url">github.com/AkashPriyadarshii/tdlib-android</a>
           <div class="project-desc">
-            Automated precompiled TDLib distribution for Android. CI/CD pipeline builds and publishes binaries for all 4 Android ABIs — arm64-v8a, armeabi-v7a, x86, x86_64 — with automatic versioned releases. Includes Kotlin Coroutines/Flow wrappers for drop-in Gradle integration. Sustained maintenance since 2021.
+            Precompiled TDLib for all 4 Android ABIs via automated CI/CD pipeline with Kotlin Coroutines/Flow wrappers. Sustained maintenance since 2021.
           </div>
         </div>
 
-        <!-- 2 -->
         <div class="project">
           <div class="project-header">
-            <span class="project-name">Sitamarhi Tourism Portal</span>
+            <span class="project-name">Sitamarhi Tourism Portal<span class="project-url-inline"> — sitamarhi.pages.dev</span></span>
             <span class="project-stack">HTML &bull; CSS &bull; JavaScript &bull; Python</span>
           </div>
-          <a href="https://sitamarhi.pages.dev" class="project-url">sitamarhi.pages.dev</a>
           <div class="project-desc">
-            Tourism and information portal for Sitamarhi, Bihar — district with significant cultural and religious heritage. Built and deployed on Cloudflare Pages. Showcases local attractions, temples, and travel information for visitors.
+            Tourism and information portal for Sitamarhi, Bihar. Built and deployed on Cloudflare Pages showcasing local attractions and travel information.
           </div>
         </div>
 
-        <!-- 3 -->
         <div class="project">
           <div class="project-header">
-            <span class="project-name">Personal Portfolio</span>
+            <span class="project-name">Personal Portfolio<span class="project-url-inline"> — akashpriyadarshi.vercel.app</span></span>
             <span class="project-stack">TypeScript &bull; Next.js &bull; Supabase &bull; PL/pgSQL</span>
           </div>
-          <a href="https://akashpriyadarshi.vercel.app" class="project-url">akashpriyadarshi.vercel.app</a>
           <div class="project-desc">
-            Production portfolio and operations hub. Built with Next.js 16 and Supabase (PostgreSQL with Row-Level Security). Features HMAC SHA-256 magic-link authentication. Demonstrates continuous iteration and CI/CD discipline.
+            Production portfolio and operations hub built with Next.js 16 and Supabase (PostgreSQL with Row-Level Security). Features HMAC SHA-256 magic-link authentication.
           </div>
         </div>
 
-        <!-- 4 -->
         <div class="project">
           <div class="project-header">
-            <span class="project-name">My-Starred-Repos</span>
+            <span class="project-name">My-Starred-Repos<span class="project-url-inline"> — github.com/AkashPriyadarshii/My-Starred-Repos</span></span>
             <span class="project-stack">JavaScript &bull; Python &bull; PWA &bull; GitHub Actions</span>
           </div>
-          <a href="https://github.com/AkashPriyadarshii/My-Starred-Repos" class="project-url">github.com/AkashPriyadarshii/My-Starred-Repos</a>
           <div class="project-desc">
-            Auto-updating GitHub starred-repository tracker. Progressive Web App with glassmorphism dashboard and daily GitHub Actions sync pipeline. Features 6 theme variants.
+            Auto-updating GitHub starred-repository tracker as a PWA with glassmorphism dashboard and daily GitHub Actions sync pipeline.
           </div>
         </div>
 
-        <!-- 5 -->
         <div class="project">
           <div class="project-header">
-            <span class="project-name">awesome-agentic-stack</span>
+            <span class="project-name">awesome-agentic-stack<span class="project-url-inline"> — github.com/AkashPriyadarshii/awesome-agentic-stack</span></span>
             <span class="project-stack">Shell &bull; PowerShell</span>
           </div>
-          <a href="https://github.com/AkashPriyadarshii/awesome-agentic-stack" class="project-url">github.com/AkashPriyadarshii/awesome-agentic-stack</a>
           <div class="project-desc">
-            Curated directory of AI/agent tools. MIT-licensed community resource for the AI engineering ecosystem with an emphasis on quality filtering.
+            Curated directory of AI/agent tools. MIT-licensed community resource for the AI engineering ecosystem.
           </div>
         </div>
 
-        <!-- 6 -->
         <div class="project">
           <div class="project-header">
-            <span class="project-name">sbi-kiosk-id-generator</span>
-            <span class="project-stack">TypeScript</span>
+            <span class="project-name">sbi-kiosk-id-generator / claude-sync</span>
+            <span class="project-stack">TypeScript / Go</span>
           </div>
-          <a href="https://github.com/AkashPriyadarshii/sbi-kiosk-id-generator" class="project-url">github.com/AkashPriyadarshii/sbi-kiosk-id-generator</a>
           <div class="project-desc">
-            TypeScript utility for generating structured kiosk identifiers. Demonstrates proficiency in typed functional programming and utility library design.
-          </div>
-        </div>
-
-        <!-- 7 -->
-        <div class="project">
-          <div class="project-header">
-            <span class="project-name">claude-sync</span>
-            <span class="project-stack">Go</span>
-          </div>
-          <a href="https://github.com/AkashPriyadarshii/claude-sync" class="project-url">github.com/AkashPriyadarshii/claude-sync</a>
-          <div class="project-desc">
-            CLI tool written in Go for synchronizing content with Claude. Cross-platform command-line interface showcasing systems-level Go programming.
+            TypeScript utility for kiosk identifiers. Go CLI tool for syncing content with Claude.
           </div>
         </div>
       </div>
