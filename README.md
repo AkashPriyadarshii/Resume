@@ -13,9 +13,3 @@ Professional resume of Akash Priyadarshi — self-taught developer and open-sour
 |------|--------|-----|
 | `index.html` | HTML | View in browser, print to PDF |
 | `resume.md` | Markdown | ATS-friendly, copy-paste for job portals |
-
-## Tech Stack Used
-
-- Built with Claude Code
-- HTML/CSS with Inter font
-- Print-optimized stylesheets
