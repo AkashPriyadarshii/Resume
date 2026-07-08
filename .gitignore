@@ -1,6 +1,9 @@
 # Session handoff — local only, not for GitHub
 HANDOFF.md
 
+# CLAUDE.md — project instructions for Claude Code, local only
+CLAUDE.md
+
 # Misc generated markdown (not resume.md or README.md)
 *.md
 !resume.md
