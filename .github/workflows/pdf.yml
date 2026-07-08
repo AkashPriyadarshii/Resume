@@ -1,0 +1,33 @@
+name: Build PDF
+on:
+  push:
+    branches: [main]
+    paths: ['index.html']
+  workflow_dispatch:
+
+jobs:
+  pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install -g puppeteer
+      - run: |
+          node -e "
+          const p = require('puppeteer');
+          (async () => {
+            const b = await p.launch({headless:true, args:['--no-sandbox']});
+            const pg = await b.newPage();
+            await pg.goto('file://' + process.cwd() + '/index.html', {waitUntil:'networkidle0'});
+            await pg.pdf({path:'resume.pdf', format:'A4', printBackground:true, margin:{top:0,right:0,bottom:0,left:0}});
+            await b.close();
+          })();
+          "
+      - run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add resume.pdf
+          git diff --cached --quiet || git commit -m "Auto-update PDF"
+          git push
