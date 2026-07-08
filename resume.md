@@ -47,17 +47,6 @@ github.com/AkashPriyadarshii/My-Starred-Repos
 
 Auto-updating GitHub starred-repository tracker as a PWA with glassmorphism dashboard and daily GitHub Actions sync pipeline.
 
-### awesome-agentic-stack
-*Shell, PowerShell*
-github.com/AkashPriyadarshii/awesome-agentic-stack
-
-Curated directory of AI/agent tools. MIT-licensed community resource for the AI engineering ecosystem.
-
-### sbi-kiosk-id-generator / claude-sync
-*TypeScript / Go*
-
-TypeScript utility for kiosk identifiers. Go CLI tool for syncing content with Claude.
-
 ## Education
 
 | Qualification | School | Year |
