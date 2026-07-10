@@ -21,7 +21,8 @@ jobs:
             const b = await p.launch({headless:true, args:['--no-sandbox']});
             const pg = await b.newPage();
             await pg.goto('file://' + process.cwd() + '/index.html', {waitUntil:'networkidle0'});
-            await pg.pdf({path:'resume.pdf', format:'A4', printBackground:true, margin:{top:0,right:0,bottom:0,left:0}, displayHeaderFooter: true, headerTemplate: '<span></span>', footerTemplate: '<span></span>'});
+            await pg.emulateMediaType('screen');
+            await pg.pdf({path:'resume.pdf', format:'A4', printBackground:true, margin:{top:0,right:0,bottom:0,left:0}});
             await b.close();
           })();
           "

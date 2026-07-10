@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.1.0] — 2026-07-10
+
+### Added
+- SEO meta tags (Open Graph, Twitter Cards, JSON-LD Person schema)
+- `robots.txt` and `sitemap.xml` for search engine indexing
+- GitHub repo topics for discoverability
+- Print CSS: links now visually distinguishable with underline
+- `@page` CSS directive for proper PDF page sizing
+
+### Fixed
+- PDF hyperlinks now clickable (Puppeteer `emulateMediaType('screen')`)
+- Removed AI-cadence em-dash overuse in body copy
+
 ## [1.0.0] — 2026-07-08
 
 ### Added
