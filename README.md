@@ -6,6 +6,8 @@ Professional resume of Akash Priyadarshi — self-taught developer and open-sour
 - Portfolio: [akashpriyadarshi.vercel.app](https://akashpriyadarshi.vercel.app)
 - GitHub: [github.com/AkashPriyadarshii](https://github.com/AkashPriyadarshii)
 - Sitamarhi Tourism Portal: [sitamarhi.pages.dev](https://sitamarhi.pages.dev)
+- Site (GitHub Pages): [https://akashpriyadarshii.github.io/Resume/](https://akashpriyadarshii.github.io/Resume/)
+- Resume (PDF): [resume.pdf](https://github.com/AkashPriyadarshii/Resume/blob/main/resume.pdf)
 
 ## Files
 
