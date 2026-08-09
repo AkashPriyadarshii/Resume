@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.2.0] — 2026-08-09
+
+### Changed
+- **Honesty pass on all claims.** Removed three unverifiable/dead claims that failed a full audit:
+  - "Sustained maintenance since 2021" on tdlib-android (current GitHub account is from 2026 — claim not verifiable from the linked profile)
+  - "HMAC SHA-256 magic-link authentication" and "Supabase Row-Level Security" on the portfolio (backend was purged; site is now a static Next.js export)
+  - Re-framed tdlib-android to its verifiable reality: CI matrix compiles TDLib for all 4 ABIs, AARs shipped via GitHub Releases (Maven Central publish was never confirmed)
+- Skills table now tiers **core** vs **working knowledge** languages instead of a flat 14-language wall
+- Summary re-positioned around the real differentiators: AI-augmented engineering, systems tooling (Rust/Zig/Go), India-first products, live deployments
+- Projects rewritten as **what it is + verifiable proof** (LOC, tests, CI, live URL) with zero hype adjectives
+- Projects updated to current reality: added rustygrep, kharcha, zcat, repomap; dropped dead/weak claims
+
+### Added
+- `AUDIT.md` — full analysis of what was audited, what was removed and why, and recommended next steps
+- `og-image.png` now actually exists (was referenced in meta tags but returned 404)
+
 ## [1.1.0] — 2026-07-10
 
 ### Added

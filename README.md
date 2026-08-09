@@ -1,25 +1,32 @@
 # Akash Priyadarshi — Resume
 
-Self-taught developer and open-source contributor based in Patna, Bihar, India. Building tools across Kotlin, TypeScript, Python, Go, and Rust.
+Self-taught developer and AI-augmented engineer based in Patna, Bihar, India. Building systems tooling in Rust, Zig, and Go; Android apps in Kotlin and Flutter; web apps in Next.js.
 
 **Portfolio:** [akashpriyadarshi.vercel.app](https://akashpriyadarshi.vercel.app) | **GitHub:** [AkashPriyadarshii](https://github.com/AkashPriyadarshii) | **LinkedIn:** [akash-priyadarshi](https://linkedin.com/in/akash-priyadarshi-1aa51b37a)
 
 ## What I Build
 
-- **tdlib-android** — Precompiled TDLib for all 4 Android ABIs with Kotlin Coroutines/Flow wrappers and automated CI/CD ([GitHub](https://github.com/AkashPriyadarshii/tdlib-android))
-- **Sitamarhi Tourism Portal** — Tourism and information portal for Sitamarhi, Bihar, deployed on Cloudflare Pages ([Live](https://sitamarhi.pages.dev))
-- **Personal Portfolio** — Full-stack portfolio with Next.js 16, Supabase (PostgreSQL + Row-Level Security), and HMAC SHA-256 magic-link auth ([Live](https://akashpriyadarshi.vercel.app))
-- **My-Starred-Repos** — Auto-updating GitHub starred-repo tracker as a PWA with daily GitHub Actions sync ([GitHub](https://github.com/AkashPriyadarshii/My-Starred-Repos))
+- **rustygrep** — Token-efficient grep for LLM coding agents with a stdio MCP server ([GitHub](https://github.com/AkashPriyadarshii/rustygrep))
+- **kharcha** — India-first UPI expense tracker, offline-first Flutter app with Supabase sync ([GitHub](https://github.com/AkashPriyadarshii/kharcha))
+- **tdlib-android** — Precompiled TDLib for all 4 Android ABIs, built by CI and shipped as AARs via GitHub Releases ([GitHub](https://github.com/AkashPriyadarshii/tdlib-android))
+- **zcat** — Drop-in `cat` replacement in Zig with JSON output for AI agents ([GitHub](https://github.com/AkashPriyadarshii/zcat))
+- **repomap** — Token-budgeted repo maps for AI agents, stdlib-only Go ([GitHub](https://github.com/AkashPriyadarshii/repomap))
+- **My-Starred-Repos** — Self-updating dashboard of 813 curated starred repos, refreshed daily by GitHub Actions ([Live](https://my-starred-repos.vercel.app))
+- **Personal Portfolio** — Next.js 16 static-export portfolio and blog ([Live](https://akashpriyadarshi.vercel.app))
+- **Sitamarhi Tourism Portal** — Multi-page tourism portal for Sitamarhi, Bihar on Cloudflare Pages ([Live](https://sitamarhi.pages.dev))
 
 ## Technical Skills
 
 | Area | Technologies |
 |------|-------------|
-| Languages | TypeScript, JavaScript, Python, Kotlin, Go, Java, Rust, Swift, Dart, Shell, PowerShell, PL/pgSQL |
-| Android | Kotlin, Jetpack Compose, Coroutines, Flow, Room, Android SDK, Gradle, TDLib |
-| Frontend | Next.js, React, TypeScript, HTML, CSS, PWA |
-| Backend | Supabase, PostgreSQL, REST APIs |
-| DevOps | GitHub Actions, CI/CD, Docker, Vercel, Cloudflare Pages |
+| Languages (core) | Rust, Zig, Go, TypeScript, Python, Kotlin, Dart |
+| Languages (working) | Java, Swift, Shell, PowerShell, PL/pgSQL, SQL |
+| Systems | CLI tooling, cross-platform builds, token-efficient LLM-agent output, MCP servers |
+| Android | Kotlin, Jetpack Compose, Coroutines, Flow, Room, TDLib, Gradle |
+| Frontend | Next.js, React, TypeScript, HTML, CSS, Tailwind, PWA |
+| Backend & Data | PostgreSQL, Supabase, SQLite (Drift), REST APIs |
+| DevOps & Cloud | GitHub Actions, Docker, Vercel, Cloudflare Pages |
+| AI-Augmented Engineering | Claude Code, MCP, prompt engineering, agent workflow design |
 
 ## Resume
 

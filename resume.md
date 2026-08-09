@@ -8,44 +8,57 @@ linkedin.com/in/akash-priyadarshi-1aa51b37a
 
 ## Professional Summary
 
-Self-taught developer and open-source contributor with experience across multiple programming languages. Created and maintained tdlib-android, an automated precompiled TDLib distribution for Android supporting all 4 CPU architectures with Gradle integration. Built a tourism portal for Sitamarhi, Bihar and a starred-repo productivity tool. Experienced in full-stack development with Next.js and Supabase, CI/CD pipeline automation on GitHub Actions, and cross-platform tooling from Kotlin/Android to Go CLI applications.
+Self-taught developer and AI-augmented engineer based in Patna, India. Builds complete products end-to-end — systems tooling in Rust, Zig, and Go; Android apps in Kotlin and Flutter; web apps in Next.js — shipping with AI as a force multiplier. Published a token-efficient grep for LLM coding agents (rustygrep), built an offline-first UPI expense tracker for India (kharcha), and deployed multiple production sites on Vercel and Cloudflare Pages. Strengths: turning ideas into working, deployed products quickly, and writing developer tooling that survives real use.
 
 ## Technical Skills
 
 | Category | Skills |
 |---|---|
-| Languages | TypeScript, JavaScript, Python, Kotlin, Go, Java, Rust, Swift, Dart/Flutter, Shell, PowerShell, PL/pgSQL, HTML, CSS, Dockerfile |
-| Android | Kotlin, Jetpack Compose, Coroutines, Flow, Room, Android SDK, Gradle, TDLib |
-| Frontend | Next.js, React, TypeScript, JavaScript, HTML, CSS, PWA |
-| Backend & DB | Supabase, PostgreSQL, PL/pgSQL, REST APIs |
-| DevOps & Cloud | GitHub Actions, CI/CD, Docker, Vercel, Cloudflare Pages |
-| Tools | Claude Code, Git, AI-Assisted Development, Prompt Engineering |
+| Languages (core) | Rust, Zig, Go, TypeScript, Python, Kotlin, Dart |
+| Languages (working) | Java, Swift, Shell, PowerShell, PL/pgSQL, SQL |
+| Systems | CLI tooling, cross-platform builds, token-efficient LLM-agent output, MCP servers |
+| Android | Kotlin, Jetpack Compose, Coroutines, Flow, Room, TDLib, Gradle |
+| Frontend | Next.js, React, TypeScript, HTML/CSS, Tailwind, PWA |
+| Backend & Data | PostgreSQL, Supabase, SQLite (Drift), REST APIs |
+| DevOps & Cloud | GitHub Actions, Docker, Vercel, Cloudflare Pages, CI/CD |
+| AI-Augmented Engineering | Claude Code, MCP, prompt engineering, agent workflow design |
 
 ## Projects
 
-### tdlib-android
-*Kotlin, Shell, Dockerfile, GitHub Actions*
+### rustygrep — grep for LLM coding agents (Rust)
+github.com/AkashPriyadarshii/rustygrep
+
+Fast grep built on ripgrep's own crates. `--llm` mode compresses matched output to save context-window tokens, and a stdio MCP server lets agents grep from any tool. ~1,350 lines of Rust, 6 test files, criterion benchmarks, published crate, green CI.
+
+### kharcha — India-first UPI expense tracker (Flutter/Dart)
+github.com/AkashPriyadarshii/kharcha
+
+Android app that auto-captures payments from UPI push notifications using a regex parser (amount, merchant, UPI reference), stores everything offline-first in Drift/SQLite, with optional Supabase sync. 24 screens/tabs; built as a real product for Indian UPI users.
+
+### tdlib-android — precompiled TDLib for Android (Kotlin)
 github.com/AkashPriyadarshii/tdlib-android
 
-Precompiled TDLib for all 4 Android ABIs via automated CI/CD pipeline with Kotlin Coroutines/Flow wrappers. Sustained maintenance since 2021.
+GitHub Actions matrix compiles the TDLib native library for all 4 Android ABIs and ships prebuilt AARs via GitHub Releases — no local NDK build. Kotlin Coroutines/Flow wrapper included. Built to solve the 4GB-RAM/NDK build problem on a low-spec Windows machine.
 
-### Sitamarhi Tourism Portal
-*HTML, CSS, JavaScript, Python*
-sitamarhi.pages.dev
+### zcat + repomap — systems tools for AI agents (Zig + Go)
+github.com/AkashPriyadarshii/zcat | github.com/AkashPriyadarshii/repomap
 
-Tourism and information portal for Sitamarhi, Bihar. Built and deployed on Cloudflare Pages showcasing local attractions and travel information.
+zcat: drop-in `cat` replacement in Zig (~510 LOC + tests + CI) with a `--json` output mode for agents. repomap: walks a repo, ranks files by symbol/ref density, emits a token-budgeted map (`--budget`); stdlib-only Go, ~835 LOC + tests.
 
-### Personal Portfolio
-*TypeScript, Next.js, Supabase, PL/pgSQL*
-akashpriyadarshi.vercel.app
-
-Production portfolio and operations hub built with Next.js 16 and Supabase (PostgreSQL with Row-Level Security). Features HMAC SHA-256 magic-link authentication.
-
-### My-Starred-Repos
-*JavaScript, Python, PWA, GitHub Actions*
+### My-Starred-Repos — self-updating repo dashboard (Python)
 github.com/AkashPriyadarshii/My-Starred-Repos
 
-Auto-updating GitHub starred-repository tracker as a PWA with glassmorphism dashboard and daily GitHub Actions sync pipeline.
+Auto-categorizes 813 curated starred repos (AI agents, systems, LLM tooling) and refreshes daily via GitHub Actions. Live PWA: my-starred-repos.vercel.app.
+
+### Personal Portfolio — Next.js 16 static site (TypeScript)
+akashpriyadarshi.vercel.app
+
+Production portfolio and blog: Next.js 16 static export, 12 MDX posts, 11 projects, automated OG-image pipeline. Deployed on Vercel.
+
+### Sitamarhi Tourism Portal (HTML/CSS/JS + Python)
+sitamarhi.pages.dev
+
+Multi-page tourism portal for Sitamarhi, Bihar (birthplace of Goddess Sita): 5 pages, PWA, visitor counter via Cloudflare Function. Deployed on Cloudflare Pages.
 
 ## Education
 
