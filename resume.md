@@ -1,6 +1,6 @@
 # Akash Priyadarshi
 Patna, Bihar, India  
-+91 REDACTED | ydv.akash2006@gmail.com  
+ydv.akash2006@gmail.com  
 github.com/AkashPriyadarshii | akashpriyadarshi.vercel.app  
 linkedin.com/in/akash-priyadarshi-1aa51b37a
 
