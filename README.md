@@ -41,9 +41,11 @@ Building systems tooling in Rust, Zig, and Go; Android apps in Kotlin and Flutte
 
 | File | Format | Use |
 |------|--------|-----|
-| `index.html` | HTML | View in browser, print to PDF |
-| `resume.md` | Markdown | ATS-friendly, copy-paste for job portals |
-| `resume.pdf` | PDF | Auto-generated via GitHub Actions |
+| `index.html` | HTML | View in browser, interactive UI, print styling |
+| `resume-ast.pdf` | PDF | **ATS-Optimized PDF** — Single-column, 100% parse-safe |
+| `resume-ast.md` | Markdown | **ATS-Optimized Markdown** — Table-free, plain copy-paste |
+| `resume.pdf` | PDF | Visual PDF format |
+| `resume.md` | Markdown | Full Markdown version |
 
 **Live:** [akashpriyadarshii.github.io/Resume](https://akashpriyadarshii.github.io/Resume/)
 
