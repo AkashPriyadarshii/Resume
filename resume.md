@@ -8,7 +8,7 @@ linkedin.com/in/akash-priyadarshi-1aa51b37a
 
 ## Professional Summary
 
-Self-taught developer and AI-augmented engineer based in Patna, India. Builds complete products end-to-end — systems tooling in Rust, Zig, and Go; Android apps in Kotlin and Flutter; web apps in Next.js — shipping with AI as a force multiplier. Published a token-efficient grep for LLM coding agents (rustygrep), built an offline-first UPI expense tracker for India (kharcha), and deployed multiple production sites on Vercel and Cloudflare Pages. Strengths: turning ideas into working, deployed products quickly, and writing developer tooling that survives real use.
+Self-taught developer and AI-augmented engineer from Patna, India. Builds complete products end-to-end alone: systems tooling in Rust, five shipped agent CLIs with 94 combined GitHub stars (the TypeSafe Jev ecosystem), Android apps with on-device Rust cores, and deployed products on Vercel and Cloudflare Pages.
 
 ## Technical Skills
 
@@ -25,40 +25,30 @@ Self-taught developer and AI-augmented engineer based in Patna, India. Builds co
 
 ## Projects
 
-### rustygrep — grep for LLM coding agents (Rust)
+### rustygrep: grep for LLM coding agents (Rust)
 github.com/AkashPriyadarshii/rustygrep
 
-Fast grep built on ripgrep's own crates. `--llm` mode compresses matched output to save context-window tokens, and a stdio MCP server lets agents grep from any tool. ~1,350 lines of Rust, 6 test files, criterion benchmarks, published crate, green CI.
+Built on ripgrep's own crates. `--llm` mode compresses matched output to save context-window tokens; a stdio MCP server lets agents grep from any tool. ~1,350 LOC, 6 test files, criterion benchmarks, published crate, green CI.
 
-### kharcha — India-first UPI expense tracker (Flutter/Dart)
+### TypeSafe Jev ecosystem: five agent CLIs and frameworks (Rust)
+github.com/AkashPriyadarshii/jev-seo | jev-curate | jev-superpowers | jev-git | jev-scout
+
+Shipped tooling suite for AI coding agents: agent-first SEO and GEO CLI with MCP server (jev-seo), synthetic dataset sifter streaming Parquet/JSONL (jev-curate), sub-second git pre-commit and pre-push reflex gate (jev-git), zero-hallucination repo and crate scout (jev-scout), and a systematic agent development framework (jev-superpowers). 94 combined GitHub stars.
+
+### kharcha: India-first UPI expense tracker (Kotlin / Rust)
 github.com/AkashPriyadarshii/kharcha
 
-Android app that auto-captures payments from UPI push notifications using a regex parser (amount, merchant, UPI reference), stores everything offline-first in Drift/SQLite, with optional Supabase sync. 24 screens/tabs; built as a real product for Indian UPI users.
+Android app that auto-captures UPI payments from SMS and notifications (amount, merchant, reference) with an on-device Rust core (0.18 ms parse). Offline-first storage, no cloud dependency, built for Indian UPI users.
 
-### tdlib-android — precompiled TDLib for Android (Kotlin)
+### tdlib-android: precompiled TDLib for Android (Kotlin / C++)
 github.com/AkashPriyadarshii/tdlib-android
 
-GitHub Actions matrix compiles the TDLib native library for all 4 Android ABIs and ships prebuilt AARs via GitHub Releases — no local NDK build. Kotlin Coroutines/Flow wrapper included. Built to solve the 4GB-RAM/NDK build problem on a low-spec Windows machine.
+GitHub Actions matrix compiles TDLib for all 4 Android ABIs and ships prebuilt AARs on GitHub Releases and Maven Central (`io.github.tdlib-android`): 2,000+ combined downloads, consumed directly as an Android Gradle dependency. Kotlin Coroutines/Flow wrapper included.
 
-### zcat + repomap — systems tools for AI agents (Zig + Go)
-github.com/AkashPriyadarshii/zcat | github.com/AkashPriyadarshii/repomap
-
-zcat: drop-in `cat` replacement in Zig (~510 LOC + tests + CI) with a `--json` output mode for agents. repomap: walks a repo, ranks files by symbol/ref density, emits a token-budgeted map (`--budget`); stdlib-only Go, ~835 LOC + tests.
-
-### My-Starred-Repos — self-updating repo dashboard (Python)
+### My-Starred-Repos: self-updating repo dashboard (Python)
 github.com/AkashPriyadarshii/My-Starred-Repos
 
-Auto-categorizes 813 curated starred repos (AI agents, systems, LLM tooling) and refreshes daily via GitHub Actions. Live PWA: my-starred-repos.vercel.app.
-
-### Personal Portfolio — Next.js 16 static site (TypeScript)
-akashpriyadarshi.vercel.app
-
-Production portfolio and blog: Next.js 16 static export, 12 MDX posts, 11 projects, automated OG-image pipeline. Deployed on Vercel.
-
-### Sitamarhi Tourism Portal (HTML/CSS/JS + Python)
-sitamarhi.pages.dev
-
-Multi-page tourism portal for Sitamarhi, Bihar (birthplace of Goddess Sita): 5 pages, PWA, visitor counter via Cloudflare Function. Deployed on Cloudflare Pages.
+Auto-categorizes 813 curated starred repos (AI agents, systems, LLM tooling), refreshed daily by GitHub Actions. Live PWA: my-starred-repos.vercel.app.
 
 ## Education
 
@@ -69,5 +59,5 @@ Multi-page tourism portal for Sitamarhi, Bihar (birthplace of Goddess Sita): 5 p
 
 ## Languages
 
-- **English** — Professional Working Proficiency
-- **Hindi** — Native Proficiency
+- **English**: Professional Working Proficiency
+- **Hindi**: Native Proficiency

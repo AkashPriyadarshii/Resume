@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Akash Priyadarshi — ATS Resume</title>
+  <title>Akash Priyadarshi: ATS Resume</title>
   <style>
     @page {
       size: A4 portrait;
@@ -171,7 +171,7 @@
     <!-- Header -->
     <div class="header">
       <h1>Akash Priyadarshi</h1>
-      <div class="tagline">Self-Taught Developer &bull; AI-Augmented Systems Engineer</div>
+      <div class="tagline">Self-Taught Developer &bull; AI-Augmented Engineer</div>
       <div class="contact-line">
         <span>Patna, Bihar, India</span>
         <span class="sep">|</span>
@@ -189,7 +189,7 @@
     <div class="section">
       <div class="section-title">Professional Summary</div>
       <p class="summary-p">
-        Self-taught developer and AI-augmented engineer based in Patna, India. Specializes in systems programming with <strong>Rust, Zig, and Go</strong>, Android engineering with <strong>Kotlin and Flutter</strong>, and full-stack web applications with <strong>Next.js</strong>. Proven track record of shipping end-to-end production software: authored a token-efficient grep engine for AI agents (rustygrep), engineered an offline-first UPI expense tracker for India (kharcha), and deployed automated multi-ABI compilation pipelines on GitHub Actions.
+        Self-taught developer and AI-augmented engineer from Patna, India. Builds complete products end-to-end alone: systems tooling in Rust, five shipped agent CLIs with 94 combined GitHub stars (the TypeSafe Jev ecosystem), Android apps with on-device Rust cores, and deployed products on Vercel and Cloudflare Pages.
       </p>
     </div>
 
@@ -212,65 +212,56 @@
 
       <div class="project">
         <div class="project-header">
-          <span class="project-title">rustygrep — Token-Efficient Grep for LLM Coding Agents <a href="https://github.com/AkashPriyadarshii/rustygrep" class="project-link">[GitHub]</a></span>
+          <span class="project-title">rustygrep: Token-Efficient Grep for LLM Coding Agents <a href="https://github.com/AkashPriyadarshii/rustygrep" class="project-link">[GitHub]</a></span>
           <span class="project-stack">Rust &bull; CLI &bull; MCP</span>
         </div>
         <ul class="project-bullets">
-          <li>Engineered a high-performance grep utility built on ripgrep core crates with a dedicated <code>--llm</code> mode compressing matched code output for agent context windows.</li>
-          <li>Implemented a stdio Model Context Protocol (MCP) server for direct agent tool calling (~1,350 LOC, 6 test suites, Criterion benchmarks, published crate).</li>
+          <li>Built on ripgrep's core crates with a dedicated <code>--llm</code> mode that compresses matched output to save LLM context-window tokens.</li>
+          <li>stdio Model Context Protocol (MCP) server for direct agent tool calling; ~1,350 LOC, 6 test suites, Criterion benchmarks, published crate, green CI.</li>
         </ul>
       </div>
 
       <div class="project">
         <div class="project-header">
-          <span class="project-title">kharcha — India-First Offline UPI Expense Tracker <a href="https://github.com/AkashPriyadarshii/kharcha" class="project-link">[GitHub]</a></span>
-          <span class="project-stack">Flutter &bull; Dart &bull; SQLite</span>
+          <span class="project-title">kharcha: India-First UPI Expense Tracker <a href="https://github.com/AkashPriyadarshii/kharcha" class="project-link">[GitHub]</a></span>
+          <span class="project-stack">Kotlin &bull; Rust</span>
         </div>
         <ul class="project-bullets">
-          <li>Built an Android expense tracker auto-capturing Indian UPI payments (GPay, PhonePe, Paytm) via deterministic notification regex parsing.</li>
-          <li>Implemented offline-first local persistence using Drift / SQLite with optional Supabase cloud synchronization across 24 screens/tabs.</li>
+          <li>Android app auto-capturing UPI payments from SMS and notifications (amount, merchant, reference) with an on-device Rust core (0.18 ms parse).</li>
+          <li>Offline-first storage with no cloud dependency, built for Indian UPI users.</li>
         </ul>
       </div>
 
       <div class="project">
         <div class="project-header">
-          <span class="project-title">tdlib-android — Precompiled TDLib Distribution for Android <a href="https://github.com/AkashPriyadarshii/tdlib-android" class="project-link">[GitHub]</a></span>
-          <span class="project-stack">Kotlin &bull; Shell &bull; CI/CD</span>
+          <span class="project-title">tdlib-android: Precompiled TDLib Distribution for Android <a href="https://github.com/AkashPriyadarshii/tdlib-android" class="project-link">[GitHub]</a></span>
+          <span class="project-stack">Kotlin &bull; C++</span>
         </div>
         <ul class="project-bullets">
-          <li>Engineered automated GitHub Actions matrix compiling Telegram TDLib native C++ libraries for all 4 Android ABIs (arm64-v8a, armeabi-v7a, x86, x86_64).</li>
-          <li>Published prebuilt AAR binaries on GitHub Releases bundled with Kotlin Coroutines/Flow wrappers, eliminating local NDK builds.</li>
+          <li>GitHub Actions matrix compiling Telegram TDLib native C++ libraries for all 4 Android ABIs (arm64-v8a, armeabi-v7a, x86, x86_64).</li>
+          <li>Ships prebuilt AARs via GitHub Releases and Maven Central (io.github.tdlib-android): 2,000+ combined downloads, consumed as an Android Gradle dependency with Kotlin Coroutines/Flow wrappers.</li>
         </ul>
       </div>
 
       <div class="project">
         <div class="project-header">
-          <span class="project-title">zcat + repomap — Systems Tooling for AI Coding Agents <a href="https://github.com/AkashPriyadarshii/zcat" class="project-link">[GitHub]</a></span>
-          <span class="project-stack">Zig &bull; Go</span>
+          <span class="project-title">TypeSafe Jev Ecosystem: Five Agent CLIs and Frameworks <a href="https://github.com/AkashPriyadarshii/jev-seo" class="project-link">[GitHub]</a></span>
+          <span class="project-stack">Rust</span>
         </div>
         <ul class="project-bullets">
-          <li><strong>zcat (Zig):</strong> Drop-in <code>cat</code> replacement (~510 LOC) emitting structured JSON output for AI parsers, compiled to a standalone 179KB binary.</li>
-          <li><strong>repomap (Go):</strong> Stdlib-only repository mapper (~835 LOC) ranking files by symbol density to emit token-budgeted code maps (<code>--budget</code>).</li>
+          <li>Five shipped tools for AI coding agents: agent-first SEO and GEO CLI with MCP server (jev-seo), synthetic dataset sifter streaming Parquet/JSONL (jev-curate), sub-second git pre-commit and pre-push reflex gate (jev-git), zero-hallucination repo and crate scout (jev-scout), systematic agent development framework (jev-superpowers).</li>
+          <li>94 combined GitHub stars across the five repositories.</li>
         </ul>
       </div>
 
       <div class="project">
         <div class="project-header">
-          <span class="project-title">My-Starred-Repos — Auto-Updating Curated Repository Dashboard <a href="https://github.com/AkashPriyadarshii/My-Starred-Repos" class="project-link">[GitHub]</a></span>
+          <span class="project-title">My-Starred-Repos: Auto-Updating Curated Repository Dashboard <a href="https://github.com/AkashPriyadarshii/My-Starred-Repos" class="project-link">[GitHub]</a></span>
           <span class="project-stack">Python &bull; PWA &bull; Actions</span>
         </div>
         <ul class="project-bullets">
-          <li>Automated dashboard categorizing 800+ developer repos across AI agents, systems, and LLM tooling, refreshed daily via GitHub Actions.</li>
-        </ul>
-      </div>
-
-      <div class="project">
-        <div class="project-header">
-          <span class="project-title">Personal Portfolio & Sitamarhi Tourism Portal <a href="https://akashpriyadarshi.vercel.app" class="project-link">[Live]</a></span>
-          <span class="project-stack">Next.js &bull; TypeScript &bull; Cloudflare</span>
-        </div>
-        <ul class="project-bullets">
-          <li>Next.js 16 static-export technical portfolio with MDX engineering blog and automated OG image generation. Sitamarhi cultural tourism portal on Cloudflare Pages.</li>
+          <li>Dashboard categorizing 813 curated starred repos across AI agents, systems, and LLM tooling, refreshed daily via GitHub Actions.</li>
+          <li>Live PWA: my-starred-repos.vercel.app</li>
         </ul>
       </div>
 

@@ -10,3 +10,6 @@ CLAUDE.md
 !resume-ast.md
 !README.md
 !CHANGELOG.md
+
+# Local print-layout check helpers (gen.js stays tracked, it mirrors pdf.yml)
+measure*.js
