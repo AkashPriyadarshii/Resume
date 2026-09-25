@@ -1,5 +1,7 @@
 # Akash Priyadarshi — Resume & Portfolio
 
+**Support:** fuel the next build — [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/AkashPriyadarshi)
+
 **Self-taught developer & AI-augmented engineer from Patna, Bihar, India.**
 
 Building systems tooling in Rust, Zig, and Go; Android apps in Kotlin and Flutter; web apps in Next.js. Open-source contributor. Ships real, deployed products — rustygrep, kharcha (UPI expense tracker), tdlib-android, zcat, repomap.
@@ -50,8 +52,3 @@ Building systems tooling in Rust, Zig, and Go; Android apps in Kotlin and Flutte
 **Live:** [akashpriyadarshii.github.io/Resume](https://akashpriyadarshii.github.io/Resume/)
 
 *Akash Priyadarshi · Patna, India · Rust · Zig · Go · Kotlin · Flutter · Next.js · UPI · systems programming · AI-augmented engineering*
-
-
----
-
-**Support:** fuel the next build — [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/AkashPriyadarshi)
