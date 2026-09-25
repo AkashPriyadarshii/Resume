@@ -6,7 +6,7 @@ Building systems tooling in Rust, Zig, and Go; Android apps in Kotlin and Flutte
 
 - **Portfolio:** [akashpriyadarshi.vercel.app](https://akashpriyadarshi.vercel.app)
 - **GitHub:** [AkashPriyadarshii](https://github.com/AkashPriyadarshii)
-- **LinkedIn:** [akash-priyadarshi](https://linkedin.com/in/akash-priyadarshi-1aa51b37a)
+- **LinkedIn:** [akash-priyadarshi](https://linkedin.com/in/akashpriyadarshii)
 - **Resume (live):** [akashpriyadarshii.github.io/Resume](https://akashpriyadarshii.github.io/Resume/)
 
 ---
@@ -50,3 +50,8 @@ Building systems tooling in Rust, Zig, and Go; Android apps in Kotlin and Flutte
 **Live:** [akashpriyadarshii.github.io/Resume](https://akashpriyadarshii.github.io/Resume/)
 
 *Akash Priyadarshi · Patna, India · Rust · Zig · Go · Kotlin · Flutter · Next.js · UPI · systems programming · AI-augmented engineering*
+
+
+---
+
+**Support:** fuel the next build — [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/AkashPriyadarshi)
